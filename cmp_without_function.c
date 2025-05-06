@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    char str1[100],str2[100],i;
+    char str1[100],str2[100],i=0;
     int flag=0;
     printf("Enter the String 1:-");
     gets(str1);
