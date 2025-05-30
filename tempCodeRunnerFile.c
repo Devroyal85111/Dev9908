@@ -1,2 +1,3 @@
 
-    for ( i = 0; i < size1; i++)
+    }
+    for ( i = 0; i < size; i++)
