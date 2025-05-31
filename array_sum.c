@@ -20,6 +20,6 @@ int main()
         *ptrsum=*ptrsum+arr[i];
     }
     
-    printf("The sum is %d",*ptrsum);
+    printf("\nThe sum is %d",*ptrsum);
     return 0;
 }
