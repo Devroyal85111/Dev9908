@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int arr[100],i,*ptr1,size,min;
-    printf("Enter the size");
+    int arr[100],i,size,max,*ptr1;
+    printf("Enter the Size:-");
     scanf("%d",&size);
-    ptr1=arr;
+    ptr1=&arr;
     for ( i = 0; i < size; i++)
     {
         printf("Enter the Element arr[%d]",i);
@@ -14,15 +14,14 @@ int main()
     {
         printf("\narr[%d]=%d",i,*(ptr1+i));
     }
-    min=arr[0];
+    max=arr[0];
     for ( i = 0; i < size; i++)
     {
-        if(arr[i]<min)
+        if (arr[i]>max)
         {
-            min=arr[i];
-            // printf("\n%d is minimum ",min);
-        }
+            max=arr[i];
+        } 
     }
-    printf("\n%d is minimum ",min);
-     return 0;  
+    printf("\n%d is max",max);
+    return 0;
 }
