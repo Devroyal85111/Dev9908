@@ -10,6 +10,7 @@ int main()
 {
     int i;
     int max;
+    int min;
     struct employee em[5];
     for ( i = 0; i < 5; i++)
     {
@@ -25,14 +26,25 @@ int main()
     {
         printf("\n%d\t%s\t\t%ld",em[i].ID,em[i].name,em[i].salary);
     }
-    for ( i = 0; i < 5; i++)
+    max=em[0].salary;
+    
+    for(i=0;i<5;i++)
     {
-        em[i].salary=max;
         if(em[i].salary>max)
         {
-            printf("\nIt is %d",max);
+            max=em[i].salary;
         }
     }
+    min=em[0].salary;
+    for ( i = 0; i < 5; i++)
+    {
+         if(em[i].salary<min)
+        {
+            min=em[i].salary;
+        }
+    }
+    printf("\nThe maximum salary is %d",max);
+    printf("\nThe minimum salary is %d",min);
     
     return 0;
 }
